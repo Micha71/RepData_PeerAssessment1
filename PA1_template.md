@@ -1,8 +1,8 @@
 # Peer_Assessment_1_Coursera_Reproducible_Research
 
-author: Micha Bouts
+  author: Micha Bouts
 
-date: Tuesday, August 4th, 2015
+  date: Tuesday, August 4th, 2015
 
 
 ### Description of working environment
@@ -106,8 +106,8 @@ stepsDay
 hist(stepsDay$steps_per_day, 
      
      col = "deepskyblue",
-     main = "Histogram of total number of steps taken per day",
-     xlab = "Total number of steps per day"
+     main = "histogram of total number of steps taken per day",
+     xlab = "total number of steps per day"
      )
 
 ## superimpose two vertical lines on the histogram, representing the mean and median of steps taken per day
@@ -177,8 +177,8 @@ with(averageSteps,
                 
                 type = "l", 
                 xlab = "", 
-                ylab = "Average number of steps",
-                main = "Average number of steps acrosss all days")
+                ylab = "average number of steps",
+                main = "average number of steps acrosss all days")
         )
 ```
 
@@ -306,8 +306,8 @@ stepsDayNew
 hist(stepsDayNew$steps_per_day,
      
      col = "deepskyblue",
-     main = "Total number of steps per day with inputted daily median values",
-     xlab = "Total number of steps per day"
+     main = "total number of steps per day with inputted daily median values",
+     xlab = "total number of steps per day"
      
      )
 
@@ -441,7 +441,7 @@ library(ggplot2)
 
 g <- ggplot(paneldf, aes(interval, average_steps))
 
-g + geom_line() + facet_wrap( ~ type_of_day , nrow = 2, ncol = 1) + labs(title = "Average number of steps taken") + labs(x= "interval", y = "average number of steps")
+g + geom_line() + facet_wrap( ~ type_of_day , nrow = 2, ncol = 1) + labs(title = "average number of steps taken") + labs(x= "interval", y = "average number of steps")
 ```
 
 ![plot of chunk panel_plot_time_series_weekdays_versus_weekend_chunk](figure/panel_plot_time_series_weekdays_versus_weekend_chunk-1.png) 
